@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aguacanT2.Vistas.vLogin">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+    <Label 
+            Text="LOGIN"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Blue"
+            />
+    <Image Source="https://cdn-icons-png.flaticon.com/512/272/272354.png"
+               HeightRequest="200"/>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Usuario"
+                   FontSize="20"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+        <Entry x:Name="txtUsuario" 
+                   Placeholder="Ingrese su Usuario" 
+                   MaxLength="6"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+        <Label Text="Contraseña"
+                   FontSize="20"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+        <Entry x:Name="txtContraseña" 
+                   Placeholder="Ingrese su Contraseña" 
+                   IsPassword="True"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+        <Label Text=""
+                   FontSize="20"
+                   Grid.Row="2"/>
+
+        <Button x:Name="btnInicio" 
+                Text="Login" 
+                Clicked="btnInicio_Clicked"
+                Grid.Row="3"
+                Grid.Column="0"/>
+
+        <Button x:Name="btnRegistro" 
+                Text="Registrarse" 
+                Clicked="btnRegistro_Clicked"
+                Grid.Row="3"
+                Grid.Column="1"/>
+
+    </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

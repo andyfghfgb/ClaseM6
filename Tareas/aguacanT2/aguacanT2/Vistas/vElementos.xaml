@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aguacanT2.Vistas.vElementos">
+    <VerticalStackLayout>
+
+        <Label 
+            x:Name="lblUsuario"
+            TextColor="Red"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+
+        <Label 
+            Text="Ciudades del Ecuador"
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            />
+
+        <Picker x:Name="pkCiudades" Title="Escoge tu Ciudad...">
+            <Picker.Items>
+                <x:String>Quito</x:String>
+                <x:String>Guayaquil</x:String>
+                <x:String>Cuenca</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="bntPicker"
+                Text="Ver elemento seleccionado"
+                Clicked="bntPicker_Clicked">
+        </Button>
+
+        <Label x:Name="lblDatop"
+               FontSize="18"
+               TextColor="Black"
+               >
+        </Label>
+
+        <DatePicker x:Name="dpFecha" Date="08/04/2024" Format="dd/MM/yy">
+        </DatePicker>
+
+        <Button x:Name="btnFechas"
+                Text="Ver Fecha Seleccionada..."
+                Clicked="btnFechas_Clicked"
+                ></Button>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aguacanT2.Vistas.vParcial1"
+             Title="PARCIAL 1">
+
+    <Frame BorderColor="Red"  
+        CornerRadius="6"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand">
+
+        <StackLayout VerticalOptions="FillAndExpand"
+     HorizontalOptions="FillAndExpand">
+
+            <Label x:Name="lblUsuario" TextColor="Black" FontSize="20" HorizontalTextAlignment="End"></Label>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+
+               
+                <Label Text="Parcial 1"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+                <Entry x:Name="parcial1Entry"
+               Grid.Row="0"
+               Grid.Column="1"
+               HorizontalOptions="FillAndExpand" />
+
+                
+                <Label Text="Examen"
+               Grid.Row="0"
+               Grid.Column="2"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+                <Entry x:Name="examenEntry"
+               Grid.Row="0"
+               Grid.Column="3"
+               HorizontalOptions="FillAndExpand" />
+
+                <BoxView Grid.Row="1" Grid.ColumnSpan="4" HeightRequest="20" Color="White" />
+
+                <Button Text="Calcular"
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                HorizontalOptions="Center"
+                Clicked="botonParcial1_Clicked" />
+
+                
+                <Button Text="Siguiente"
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+
+                
+                <BoxView Grid.Row="3" Grid.ColumnSpan="4" HeightRequest="20" Color="White" />
+
+
+
+            </Grid>
+
+
+        </StackLayout>
+
+    </Frame>
+
+</ContentPage>
